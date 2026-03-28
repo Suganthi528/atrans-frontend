@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("https://video-meet-aj54.onrender.com");
+const socket = io("https://atrans-backend.onrender.com");
 
 function App() {
   const [original, setOriginal] = useState("");

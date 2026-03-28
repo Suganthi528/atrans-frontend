@@ -5,8 +5,8 @@ const config = {
     SOCKET_URL: 'http://localhost:5001'
   },
   production: {
-    API_BASE: 'https://video-meet-aj54.onrender.com/api',
-    SOCKET_URL: 'https://video-meet-aj54.onrender.com'
+    API_BASE: 'https://atrans-backend.onrender.com/api',
+    SOCKET_URL: 'https://atrans-backend.onrender.com'
   }
 };
 
