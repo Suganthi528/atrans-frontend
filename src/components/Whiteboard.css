@@ -1,0 +1,133 @@
+.whiteboard-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whiteboard-modal {
+  background: #1e1e2e;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 95vw;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.whiteboard-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: #2d2d44;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.wb-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.wb-tool-btn {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: #fff;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.15s;
+}
+
+.wb-tool-btn.active {
+  border-color: #7c6af7;
+  background: rgba(124,106,247,0.3);
+}
+
+.wb-colors {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.wb-color-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s;
+  outline: none;
+}
+
+.wb-color-btn.selected {
+  transform: scale(1.35);
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.wb-sizes {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.wb-size-btn {
+  background: rgba(255,255,255,0.1);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 28px;
+}
+
+.wb-size-btn.active {
+  border-color: #7c6af7;
+  background: rgba(124,106,247,0.3);
+}
+
+.wb-clear-btn {
+  background: rgba(231,76,60,0.7);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.wb-clear-btn:hover { background: #e74c3c; }
+
+.wb-close-btn {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: auto;
+}
+
+.wb-close-btn:hover { background: rgba(255,255,255,0.3); }
+
+.whiteboard-canvas {
+  display: block;
+  background: #ffffff;
+  width: 100%;
+  touch-action: none;
+}

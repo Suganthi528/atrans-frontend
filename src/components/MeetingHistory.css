@@ -1,0 +1,142 @@
+.history-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.history-header h1 { flex: 1; margin: 0; font-size: 1.8rem; }
+
+.back-btn, .clear-all-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.back-btn { background: rgba(255,255,255,0.2); color: #fff; }
+.back-btn:hover { background: rgba(255,255,255,0.35); }
+.clear-all-btn { background: #e74c3c; color: #fff; }
+.clear-all-btn:hover { background: #c0392b; }
+
+.history-empty {
+  text-align: center;
+  margin-top: 80px;
+  opacity: 0.8;
+  font-size: 1.1rem;
+}
+
+.history-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.history-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  border: 2px solid transparent;
+}
+
+.history-card:hover { background: rgba(255,255,255,0.25); }
+.history-card.active { border-color: #fff; background: rgba(255,255,255,0.25); }
+
+.hc-room { font-size: 1rem; margin-bottom: 4px; }
+.hc-name, .hc-time, .hc-duration, .hc-recordings {
+  font-size: 0.82rem;
+  opacity: 0.85;
+  margin-bottom: 2px;
+}
+
+.hc-delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(231,76,60,0.7);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+}
+
+.history-detail {
+  background: rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 24px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.history-detail h2 { margin-top: 0; }
+.history-detail h3 { margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 12px; }
+
+.no-rec { opacity: 0.6; font-size: 0.9rem; }
+
+.detail-recordings { display: flex; flex-direction: column; gap: 16px; }
+
+.detail-rec-item {
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.rec-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.rec-ts { opacity: 0.7; font-weight: 400; }
+
+.dl-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  background: #3498db;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.dl-btn:hover { background: #2980b9; }
+
+.detail-chat { display: flex; flex-direction: column; gap: 8px; }
+
+.detail-chat-msg {
+  background: rgba(0,0,0,0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
